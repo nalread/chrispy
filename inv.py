@@ -13,6 +13,13 @@ def inv_add(item):
 	else:
 		print "You got %s %s!" % (a_or_an(item), item)
 		inv.append(item)
+		
+def inv_drop(item):
+	if item in inv:
+		print "You drop the %s!" % item
+		inv.remove(item)
+	else:
+		print "You don't have that!"
 
 def inv_use(item):
 	if item in inv:
